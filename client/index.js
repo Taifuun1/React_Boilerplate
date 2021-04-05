@@ -1,8 +1,9 @@
-import React from "react";
-import { render } from "react-dom";
+import React from "react"
+import { render } from "react-dom"
 
-import Context from "./components/Root/Context";
+import { Provider } from "./Context"
+import Router from "./Router"
 
-import "./styles/base.scss";
+import "./styles/base.scss"
 
-render(<Context />, document.getElementById("root"));
+render(<Provider><Router /></Provider>, document.getElementById("root"))
